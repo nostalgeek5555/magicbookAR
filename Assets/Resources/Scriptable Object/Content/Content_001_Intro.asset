@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f8bf9dcd07089442b6a49b76d66608e, type: 3}
+  m_Name: Content_001_Intro
+  m_EditorClassIdentifier: 
+  contentID: 1
+  contentTitle: Intro
+  videoURL:
+  - https://www.youtube.com/watch?v=7fujbpJ0LB4&ab_channel=WilliamFiset
+  contentImages:
+  - {fileID: 0}
+  contentText:
+  - The time and space analysis of DFS differs according to its application area.
+    In theoretical computer science, DFS is typically used to traverse an entire
+    graph, and takes time {\displaystyle O(|V|+|E|)}O(|V| + |E|),[4] linear in the
+    size of the graph. In these applications it also uses space {\displaystyle O(|V|)}O(|V|)
+    in the worst case to store the stack of vertices on the current search path as
+    well as the set of already-visited vertices. Thus, in this setting, the time
+    and space bounds are the same as for breadth-first search and the choice of which
+    of these two algorithms to use depends less on their complexity and more on the
+    different properties of the vertex orderings the two algorithms produce.
+  - For applications of DFS in relation to specific domains, such as searching for
+    solutions in artificial intelligence or web-crawling, the graph to be traversed
+    is often either too large to visit in its entirety or infinite (DFS may suffer
+    from non-termination). In such cases, search is only performed to a limited depth;
+    due to limited resources, such as memory or disk space, one typically does not
+    use data structures to keep track of the set of all previously visited vertices.
+    When search is performed to a limited depth, the time is still linear in terms
+    of the number of expanded vertices and edges (although this number is not the
+    same as the size of the entire graph because some vertices may be searched more
+    than once and others not at all) but the space complexity of this variant of
+    DFS is only proportional to the depth limit, and as a result, is much smaller
+    than the space needed for searching to the same depth using breadth-first search.
